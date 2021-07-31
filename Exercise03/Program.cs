@@ -14,8 +14,9 @@ namespace Exercise03
             Console.Write("Please Enter a whole number: ");
             var input=Console.ReadLine();
             var output = DoConversion(input);
-            Console.Write(string.Format("Your number {0} in words is {1}", input, output));
-            Console.Write("Press <Enter>  to exit... ");
+            Console.WriteLine(string.Format("Your number {0} in words is {1}", input, output));
+            Console.WriteLine("Press <Enter>  to exit... ");
+            Console.ReadLine();
         }
         static string DoConversion(string numberStr)
         {

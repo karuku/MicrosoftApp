@@ -17,8 +17,9 @@ namespace Exercise01
             Console.Write("Please Enter an input to compare with: ");
             var inputCW = Console.ReadLine();
              
-            Console.Write(string.Format("Your input {0} matches {1} {2}", inputCW, inputRE, DoComparison(inputRE, inputCW)));
-            Console.Write("Press <Enter>  to exit... ");
+            Console.WriteLine(string.Format("Your input {0} matches {1} {2}", inputCW, inputRE, DoComparison(inputRE, inputCW)));
+            Console.WriteLine("Press <Enter>  to exit... ");
+            Console.ReadLine();
         }
         static bool DoComparison(string inputRegExp, string inputCompareWith)
         { 
